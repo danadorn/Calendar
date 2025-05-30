@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: "Dangrek", sans-serif;
+}
+
+/* Header */
+.calendar-header {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 25px;
+  color: #3a3a3a;
+  padding-bottom: 20px;
+}
+
+/* Container */
+.calendar-container {
+  width: 75%;
+  margin: auto;
+  background: #f8fff4;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+}
+
+/* Calendar Table */
+.calendar-table {
+  width: 75%;
+  border-collapse: collapse;
+}
+
+.calendar-table th,
+.calendar-table td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  vertical-align: top;
+}
+
+/* Header Styling */
+.calendar-table th {
+  background: #6aaa64;
+  color: black;
+  font-weight: bold;
+}
+
+.gray {
+  color: #cfcdcd;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+/* Event Section */
+.event-section {
+  width: 20%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.event-box {
+  background: white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-left: 4px solid #6aaa64;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+/* Event Colors */
+.event-red {
+  border-left-color: red;
+  color: red;
+}
+
+.event-blue {
+  border-left-color: blue;
+  color: blue;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .calendar-container {
+    padding: 15px;
+  }
+
+  .calendar-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .event-section {
+    width: 20%;
+    top: 100px;
+  }
+}
